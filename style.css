@@ -22,10 +22,16 @@ html,body{
 .buttons-wrapper{
     border: 1px solid gray;
     width: 30rem;
-    padding: 1rem;
+    padding: .3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: .5rem;
+    border-radius: .5rem;
+}
+
+.wrapper{
+    border: 2px solid gray;
+    padding: 1rem;
     border-radius: .5rem;
 }
 
@@ -36,6 +42,7 @@ h1{
 
 input{
     grid-column: 1/5;
+    text-align: center;
 }
 
 
