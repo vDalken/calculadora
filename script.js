@@ -10,9 +10,11 @@ igual.addEventListener("click", () =>{
 
 const buttonsWrapper = document.querySelector('.buttons-wrapper');
 
-buttonsWrapper.addEventListener("click", (parent) =>{
-    const button = parent.target;
-    if(button.innerText!=="=" && button.innerText!=="reset"){
+buttonsWrapper.addEventListener("click", (event) =>{
+    const button = event.target;
+    const buttonId = button.getAttribute("id");
+    const buttonClass = button.getAttribute("class");
+    if(!(buttonId === "equals") && !(buttonId === "reset-button") && !(buttonClass==="buttons-wrapper")){
         resultado.value += button.innerText;
     }
 });
